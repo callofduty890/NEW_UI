@@ -6,11 +6,15 @@ using System.Windows.Forms;
 
 using System.Diagnostics;
 
+using Models;
 
 namespace StudentManager
 {
     static class Program
     {
+        //定义一个用户名称，可以在主窗体下方显示出来
+        public static Admin currentAdmin = null;
+
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
