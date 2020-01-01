@@ -6,7 +6,8 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
+//添加引用自己的动态链接库
+using Models;
 
 namespace StudentManager
 {
@@ -38,8 +39,19 @@ namespace StudentManager
                 this.txtLoginPwd.Focus();
                 return;
             }
-            //密码不能为空
-            #region
+            #endregion
+
+            #region 封装用户信息对象
+            Admin objAdmin = new Admin()
+            {
+                LoginId = Convert.ToInt32(this.txtLoginId.Text.Trim()),
+                LoginPwd = this.txtLoginPwd.Text.Trim()
+            };
+            #endregion
+
+            #region 调用数据库封装的方式
+
+            #endregion
         }
         //关闭
         private void btnClose_Click(object sender, EventArgs e)
