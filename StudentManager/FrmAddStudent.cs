@@ -17,6 +17,9 @@ namespace StudentManager
         private StudentClassService studentClassService = new StudentClassService();
         //创建学生实例化操作对象
         private StudentService objStudentService = new StudentService();
+        //封装构建一个list类用以接受
+        private List<Student> stuList = new List<Student>();
+
         //构造函数
         public FrmAddStudent()
         {
@@ -25,7 +28,8 @@ namespace StudentManager
             this.cboClassName.DataSource = studentClassService.GetAllClasses();
             this.cboClassName.DisplayMember = "ClassName"; //设置下拉框显示文本
             this.cboClassName.ValueMember = "ClassId";//设置下拉框显示对应value值
-           
+            //禁止自动生成列
+            this.dgvStudentList.AutoGenerateColumns = false;
         }
         //添加新学员
         private void btnAdd_Click(object sender, EventArgs e)
@@ -101,6 +105,7 @@ namespace StudentManager
             objstudent.StudentName = this.txtStudentName.Text.Trim();
             objstudent.Gender = this.rdoMale.Checked ? "男" : "女";
             objstudent.Birthday = Convert.ToDateTime(this.dtpBirthday.Text);
+            objstudent.StudentIdNo = this.txtStudentIdNo.Text.Trim();
             objstudent.PhoneNumber = this.txtPhoneNumber.Text.Trim();
             objstudent.ClassName = this.cboClassName.Text;
             objstudent.StudentAddress = this.txtAddress.Text.Trim() == "" ? "地址不详" : this.txtAddress.Text.Trim();
@@ -112,6 +117,42 @@ namespace StudentManager
             #endregion
 
             #region 发起请求对应UI界面相应
+            int studentId = objStudentService.AddStudent(objstudent);
+            if (studentId>1)
+            {
+                //界面做出相应，添加成功
+                //同步显示添加的学员
+                objstudent.StudentId = studentId;
+                //构建列表
+                this.stuList.Add(objstudent);
+                //清空输入内容
+                this.dgvStudentList.DataSource = null;
+                //绑定资源
+                this.dgvStudentList.DataSource = this.stuList;
+
+                //输入完成后清空资源
+                DialogResult result = MessageBox.Show("新学员添加成功!是否继续添加?", "提示信息", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                //判断结果
+                if (result == DialogResult.Yes)
+                {
+                    foreach (Control item in this.gbstuinfo.Controls)
+                    {
+                        if (item is TextBox)
+                        {
+                            item.Text = "";
+                        }
+                    }
+                    this.cboClassName.SelectedIndex = -1;
+                    this.rdoFemale.Checked = false;
+                    this.rdoMale.Checked = false;
+                    this.txtStudentName.Focus();
+                    this.pbStu.Image = null;
+                }
+                else
+                {
+                    this.Close();
+                }
+            }
             #endregion
 
         }
