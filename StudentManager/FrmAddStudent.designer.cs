@@ -78,95 +78,106 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Location = new System.Drawing.Point(27, 45);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 12);
+            this.label1.Size = new System.Drawing.Size(82, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "学生姓名：";
             // 
             // txtStudentName
             // 
             this.txtStudentName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStudentName.Location = new System.Drawing.Point(91, 32);
+            this.txtStudentName.Location = new System.Drawing.Point(121, 40);
+            this.txtStudentName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(142, 21);
+            this.txtStudentName.Size = new System.Drawing.Size(189, 25);
             this.txtStudentName.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(253, 36);
+            this.label2.Location = new System.Drawing.Point(337, 45);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(52, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "性别：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(421, 36);
+            this.label3.Location = new System.Drawing.Point(561, 45);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 12);
+            this.label3.Size = new System.Drawing.Size(82, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "出生日期：";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(20, 74);
+            this.label4.Location = new System.Drawing.Point(27, 92);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.Size = new System.Drawing.Size(82, 15);
             this.label4.TabIndex = 0;
             this.label4.Text = "身份证号：";
             // 
             // txtStudentIdNo
             // 
             this.txtStudentIdNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtStudentIdNo.Location = new System.Drawing.Point(91, 70);
+            this.txtStudentIdNo.Location = new System.Drawing.Point(121, 88);
+            this.txtStudentIdNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtStudentIdNo.Name = "txtStudentIdNo";
-            this.txtStudentIdNo.Size = new System.Drawing.Size(276, 21);
+            this.txtStudentIdNo.Size = new System.Drawing.Size(367, 25);
             this.txtStudentIdNo.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(684, 74);
+            this.label5.Location = new System.Drawing.Point(912, 92);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(65, 12);
+            this.label5.Size = new System.Drawing.Size(82, 15);
             this.label5.TabIndex = 0;
             this.label5.Text = "联系电话：";
             // 
             // txtPhoneNumber
             // 
             this.txtPhoneNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(755, 70);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(1007, 88);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(167, 21);
+            this.txtPhoneNumber.Size = new System.Drawing.Size(222, 25);
             this.txtPhoneNumber.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(20, 109);
+            this.label6.Location = new System.Drawing.Point(27, 136);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.Size = new System.Drawing.Size(82, 15);
             this.label6.TabIndex = 0;
             this.label6.Text = "家庭住址：";
             // 
             // txtAddress
             // 
             this.txtAddress.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtAddress.Location = new System.Drawing.Point(91, 107);
+            this.txtAddress.Location = new System.Drawing.Point(121, 134);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(544, 21);
+            this.txtAddress.Size = new System.Drawing.Size(725, 25);
             this.txtAddress.TabIndex = 8;
             // 
             // rdoMale
             // 
             this.rdoMale.AutoSize = true;
-            this.rdoMale.Location = new System.Drawing.Point(300, 34);
+            this.rdoMale.Location = new System.Drawing.Point(400, 42);
+            this.rdoMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoMale.Name = "rdoMale";
-            this.rdoMale.Size = new System.Drawing.Size(35, 16);
+            this.rdoMale.Size = new System.Drawing.Size(43, 19);
             this.rdoMale.TabIndex = 1;
             this.rdoMale.TabStop = true;
             this.rdoMale.Text = "男";
@@ -175,9 +186,10 @@
             // rdoFemale
             // 
             this.rdoFemale.AutoSize = true;
-            this.rdoFemale.Location = new System.Drawing.Point(341, 34);
+            this.rdoFemale.Location = new System.Drawing.Point(455, 42);
+            this.rdoFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdoFemale.Name = "rdoFemale";
-            this.rdoFemale.Size = new System.Drawing.Size(35, 16);
+            this.rdoFemale.Size = new System.Drawing.Size(43, 19);
             this.rdoFemale.TabIndex = 2;
             this.rdoFemale.TabStop = true;
             this.rdoFemale.Text = "女";
@@ -186,17 +198,19 @@
             // dtpBirthday
             // 
             this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpBirthday.Location = new System.Drawing.Point(492, 32);
+            this.dtpBirthday.Location = new System.Drawing.Point(656, 40);
+            this.dtpBirthday.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(143, 21);
+            this.dtpBirthday.Size = new System.Drawing.Size(189, 25);
             this.dtpBirthday.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(684, 38);
+            this.label7.Location = new System.Drawing.Point(912, 48);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.Size = new System.Drawing.Size(82, 15);
             this.label7.TabIndex = 0;
             this.label7.Text = "所在班级：";
             // 
@@ -205,18 +219,20 @@
             this.cboClassName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboClassName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cboClassName.FormattingEnabled = true;
-            this.cboClassName.Location = new System.Drawing.Point(755, 34);
+            this.cboClassName.Location = new System.Drawing.Point(1007, 42);
+            this.cboClassName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboClassName.Name = "cboClassName";
-            this.cboClassName.Size = new System.Drawing.Size(167, 20);
+            this.cboClassName.Size = new System.Drawing.Size(221, 23);
             this.cboClassName.TabIndex = 4;
             // 
             // btnAdd
             // 
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(868, 215);
+            this.btnAdd.Location = new System.Drawing.Point(1157, 269);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(87, 35);
+            this.btnAdd.Size = new System.Drawing.Size(116, 44);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "确认添加";
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -227,9 +243,10 @@
             // 
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(868, 70);
+            this.btnClose.Location = new System.Drawing.Point(1157, 88);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(87, 35);
+            this.btnClose.Size = new System.Drawing.Size(116, 44);
             this.btnClose.TabIndex = 10;
             this.btnClose.Text = "关闭窗口";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -239,26 +256,29 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(421, 74);
+            this.label8.Location = new System.Drawing.Point(561, 92);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 12);
+            this.label8.Size = new System.Drawing.Size(82, 15);
             this.label8.TabIndex = 0;
             this.label8.Text = "考勤卡号：";
             // 
             // txtCardNo
             // 
             this.txtCardNo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCardNo.Location = new System.Drawing.Point(492, 70);
+            this.txtCardNo.Location = new System.Drawing.Point(656, 88);
+            this.txtCardNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCardNo.Name = "txtCardNo";
-            this.txtCardNo.Size = new System.Drawing.Size(143, 21);
+            this.txtCardNo.Size = new System.Drawing.Size(190, 25);
             this.txtCardNo.TabIndex = 6;
             // 
             // pbStu
             // 
             this.pbStu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbStu.Location = new System.Drawing.Point(506, 72);
+            this.pbStu.Location = new System.Drawing.Point(675, 90);
+            this.pbStu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbStu.Name = "pbStu";
-            this.pbStu.Size = new System.Drawing.Size(207, 178);
+            this.pbStu.Size = new System.Drawing.Size(275, 222);
             this.pbStu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbStu.TabIndex = 11;
             this.pbStu.TabStop = false;
@@ -268,9 +288,10 @@
             this.btnChoseImage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChoseImage.ImageIndex = 2;
             this.btnChoseImage.ImageList = this.imageList1;
-            this.btnChoseImage.Location = new System.Drawing.Point(265, 215);
+            this.btnChoseImage.Location = new System.Drawing.Point(353, 269);
+            this.btnChoseImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnChoseImage.Name = "btnChoseImage";
-            this.btnChoseImage.Size = new System.Drawing.Size(103, 35);
+            this.btnChoseImage.Size = new System.Drawing.Size(137, 44);
             this.btnChoseImage.TabIndex = 12;
             this.btnChoseImage.Text = "选择照片 ";
             this.btnChoseImage.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -292,9 +313,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.ForeColor = System.Drawing.Color.Purple;
-            this.label9.Location = new System.Drawing.Point(27, 16);
+            this.label9.Location = new System.Drawing.Point(36, 20);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(134, 31);
+            this.label9.Size = new System.Drawing.Size(167, 39);
             this.label9.TabIndex = 0;
             this.label9.Text = "添加新学员";
             // 
@@ -317,9 +339,11 @@
             this.gbstuinfo.Controls.Add(this.label7);
             this.gbstuinfo.Controls.Add(this.txtStudentIdNo);
             this.gbstuinfo.Controls.Add(this.label4);
-            this.gbstuinfo.Location = new System.Drawing.Point(33, 264);
+            this.gbstuinfo.Location = new System.Drawing.Point(44, 330);
+            this.gbstuinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbstuinfo.Name = "gbstuinfo";
-            this.gbstuinfo.Size = new System.Drawing.Size(942, 145);
+            this.gbstuinfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbstuinfo.Size = new System.Drawing.Size(1256, 181);
             this.gbstuinfo.TabIndex = 13;
             this.gbstuinfo.TabStop = false;
             this.gbstuinfo.Text = "[学员基本信息]";
@@ -327,9 +351,10 @@
             // pbVideo
             // 
             this.pbVideo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pbVideo.Location = new System.Drawing.Point(33, 72);
+            this.pbVideo.Location = new System.Drawing.Point(44, 90);
+            this.pbVideo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbVideo.Name = "pbVideo";
-            this.pbVideo.Size = new System.Drawing.Size(195, 178);
+            this.pbVideo.Size = new System.Drawing.Size(259, 222);
             this.pbVideo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbVideo.TabIndex = 11;
             this.pbVideo.TabStop = false;
@@ -339,9 +364,10 @@
             this.btnStartVideo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStartVideo.ImageIndex = 0;
             this.btnStartVideo.ImageList = this.imageList1;
-            this.btnStartVideo.Location = new System.Drawing.Point(265, 74);
+            this.btnStartVideo.Location = new System.Drawing.Point(353, 92);
+            this.btnStartVideo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStartVideo.Name = "btnStartVideo";
-            this.btnStartVideo.Size = new System.Drawing.Size(103, 35);
+            this.btnStartVideo.Size = new System.Drawing.Size(137, 44);
             this.btnStartVideo.TabIndex = 14;
             this.btnStartVideo.Text = "启动摄像头 ";
             this.btnStartVideo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -353,9 +379,10 @@
             this.btnTake.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTake.ImageIndex = 3;
             this.btnTake.ImageList = this.imageList1;
-            this.btnTake.Location = new System.Drawing.Point(265, 146);
+            this.btnTake.Location = new System.Drawing.Point(353, 182);
+            this.btnTake.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTake.Name = "btnTake";
-            this.btnTake.Size = new System.Drawing.Size(103, 35);
+            this.btnTake.Size = new System.Drawing.Size(137, 44);
             this.btnTake.TabIndex = 14;
             this.btnTake.Text = "开始拍照 ";
             this.btnTake.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -367,9 +394,10 @@
             this.btnClear.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClear.ImageIndex = 4;
             this.btnClear.ImageList = this.imageList1;
-            this.btnClear.Location = new System.Drawing.Point(374, 146);
+            this.btnClear.Location = new System.Drawing.Point(499, 182);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(103, 35);
+            this.btnClear.Size = new System.Drawing.Size(137, 44);
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "清除照片 ";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -381,9 +409,10 @@
             this.btnCloseVideo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCloseVideo.ImageIndex = 1;
             this.btnCloseVideo.ImageList = this.imageList1;
-            this.btnCloseVideo.Location = new System.Drawing.Point(374, 74);
+            this.btnCloseVideo.Location = new System.Drawing.Point(499, 92);
+            this.btnCloseVideo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCloseVideo.Name = "btnCloseVideo";
-            this.btnCloseVideo.Size = new System.Drawing.Size(103, 35);
+            this.btnCloseVideo.Size = new System.Drawing.Size(137, 44);
             this.btnCloseVideo.TabIndex = 14;
             this.btnCloseVideo.Text = "关闭摄像头 ";
             this.btnCloseVideo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -419,7 +448,8 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvStudentList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudentList.EnableHeadersVisualStyles = false;
-            this.dgvStudentList.Location = new System.Drawing.Point(33, 430);
+            this.dgvStudentList.Location = new System.Drawing.Point(44, 538);
+            this.dgvStudentList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvStudentList.Name = "dgvStudentList";
             this.dgvStudentList.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -433,7 +463,7 @@
             this.dgvStudentList.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             this.dgvStudentList.RowTemplate.Height = 23;
             this.dgvStudentList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudentList.Size = new System.Drawing.Size(942, 227);
+            this.dgvStudentList.Size = new System.Drawing.Size(1256, 284);
             this.dgvStudentList.TabIndex = 99;
             // 
             // StudentId
@@ -485,9 +515,9 @@
             // 
             // FrmAddStudent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1017, 669);
+            this.ClientSize = new System.Drawing.Size(1356, 836);
             this.Controls.Add(this.dgvStudentList);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnCloseVideo);
@@ -504,10 +534,12 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FrmAddStudent";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "添加新学员";
+            this.Load += new System.EventHandler(this.FrmAddStudent_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmAddStudent_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pbStu)).EndInit();
             this.gbstuinfo.ResumeLayout(false);

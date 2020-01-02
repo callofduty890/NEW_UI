@@ -96,7 +96,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1685, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1674, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -281,7 +281,7 @@
             this.statusStrip1.Location = new System.Drawing.Point(0, 886);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1685, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1674, 25);
             this.statusStrip1.TabIndex = 6;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -315,7 +315,7 @@
             this.spContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.spContainer.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.spContainer.Location = new System.Drawing.Point(0, 28);
-            this.spContainer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.spContainer.Margin = new System.Windows.Forms.Padding(4);
             this.spContainer.Name = "spContainer";
             // 
             // spContainer.Panel1
@@ -336,7 +336,7 @@
             this.spContainer.Panel1.Controls.Add(this.btnScoreAnalasys);
             this.spContainer.Panel1.Controls.Add(this.btnImportStu);
             this.spContainer.Panel1.Controls.Add(this.btnAddStu);
-            this.spContainer.Size = new System.Drawing.Size(1685, 858);
+            this.spContainer.Size = new System.Drawing.Size(1674, 858);
             this.spContainer.SplitterDistance = 296;
             this.spContainer.SplitterWidth = 5;
             this.spContainer.TabIndex = 9;
@@ -380,7 +380,7 @@
             this.btnChangeAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnChangeAccount.Image")));
             this.btnChangeAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChangeAccount.Location = new System.Drawing.Point(171, 538);
-            this.btnChangeAccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChangeAccount.Margin = new System.Windows.Forms.Padding(4);
             this.btnChangeAccount.Name = "btnChangeAccount";
             this.btnChangeAccount.Size = new System.Drawing.Size(109, 51);
             this.btnChangeAccount.TabIndex = 1;
@@ -394,7 +394,7 @@
             this.btnModifyPwd.Image = ((System.Drawing.Image)(resources.GetObject("btnModifyPwd.Image")));
             this.btnModifyPwd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModifyPwd.Location = new System.Drawing.Point(39, 538);
-            this.btnModifyPwd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModifyPwd.Margin = new System.Windows.Forms.Padding(4);
             this.btnModifyPwd.Name = "btnModifyPwd";
             this.btnModifyPwd.Size = new System.Drawing.Size(109, 51);
             this.btnModifyPwd.TabIndex = 1;
@@ -408,7 +408,7 @@
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Location = new System.Drawing.Point(171, 768);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(109, 51);
             this.btnExit.TabIndex = 1;
@@ -424,7 +424,7 @@
             this.btnStuManage.Image = ((System.Drawing.Image)(resources.GetObject("btnStuManage.Image")));
             this.btnStuManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStuManage.Location = new System.Drawing.Point(175, 302);
-            this.btnStuManage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStuManage.Margin = new System.Windows.Forms.Padding(4);
             this.btnStuManage.Name = "btnStuManage";
             this.btnStuManage.Size = new System.Drawing.Size(109, 51);
             this.btnStuManage.TabIndex = 1;
@@ -440,7 +440,7 @@
             this.btnScoreQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnScoreQuery.Image")));
             this.btnScoreQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnScoreQuery.Location = new System.Drawing.Point(39, 442);
-            this.btnScoreQuery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnScoreQuery.Margin = new System.Windows.Forms.Padding(4);
             this.btnScoreQuery.Name = "btnScoreQuery";
             this.btnScoreQuery.Size = new System.Drawing.Size(109, 51);
             this.btnScoreQuery.TabIndex = 1;
@@ -456,7 +456,7 @@
             this.btnCard.Image = ((System.Drawing.Image)(resources.GetObject("btnCard.Image")));
             this.btnCard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCard.Location = new System.Drawing.Point(39, 372);
-            this.btnCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCard.Margin = new System.Windows.Forms.Padding(4);
             this.btnCard.Name = "btnCard";
             this.btnCard.Size = new System.Drawing.Size(109, 51);
             this.btnCard.TabIndex = 1;
@@ -471,7 +471,7 @@
             this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUpdate.Location = new System.Drawing.Point(39, 632);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(109, 51);
             this.btnUpdate.TabIndex = 1;
@@ -485,7 +485,7 @@
             this.btnGoXiketang.Image = ((System.Drawing.Image)(resources.GetObject("btnGoXiketang.Image")));
             this.btnGoXiketang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGoXiketang.Location = new System.Drawing.Point(39, 768);
-            this.btnGoXiketang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGoXiketang.Margin = new System.Windows.Forms.Padding(4);
             this.btnGoXiketang.Name = "btnGoXiketang";
             this.btnGoXiketang.Size = new System.Drawing.Size(109, 51);
             this.btnGoXiketang.TabIndex = 1;
@@ -501,7 +501,7 @@
             this.btnAttendanceQuery.Image = ((System.Drawing.Image)(resources.GetObject("btnAttendanceQuery.Image")));
             this.btnAttendanceQuery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAttendanceQuery.Location = new System.Drawing.Point(172, 372);
-            this.btnAttendanceQuery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAttendanceQuery.Margin = new System.Windows.Forms.Padding(4);
             this.btnAttendanceQuery.Name = "btnAttendanceQuery";
             this.btnAttendanceQuery.Size = new System.Drawing.Size(109, 51);
             this.btnAttendanceQuery.TabIndex = 1;
@@ -517,7 +517,7 @@
             this.btnScoreAnalasys.Image = ((System.Drawing.Image)(resources.GetObject("btnScoreAnalasys.Image")));
             this.btnScoreAnalasys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnScoreAnalasys.Location = new System.Drawing.Point(172, 442);
-            this.btnScoreAnalasys.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnScoreAnalasys.Margin = new System.Windows.Forms.Padding(4);
             this.btnScoreAnalasys.Name = "btnScoreAnalasys";
             this.btnScoreAnalasys.Size = new System.Drawing.Size(109, 51);
             this.btnScoreAnalasys.TabIndex = 1;
@@ -532,7 +532,7 @@
             this.btnImportStu.Image = ((System.Drawing.Image)(resources.GetObject("btnImportStu.Image")));
             this.btnImportStu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnImportStu.Location = new System.Drawing.Point(175, 632);
-            this.btnImportStu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImportStu.Margin = new System.Windows.Forms.Padding(4);
             this.btnImportStu.Name = "btnImportStu";
             this.btnImportStu.Size = new System.Drawing.Size(109, 51);
             this.btnImportStu.TabIndex = 1;
@@ -548,7 +548,7 @@
             this.btnAddStu.Image = ((System.Drawing.Image)(resources.GetObject("btnAddStu.Image")));
             this.btnAddStu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddStu.Location = new System.Drawing.Point(39, 302);
-            this.btnAddStu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddStu.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddStu.Name = "btnAddStu";
             this.btnAddStu.Size = new System.Drawing.Size(109, 51);
             this.btnAddStu.TabIndex = 1;
@@ -561,14 +561,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1685, 911);
+            this.ClientSize = new System.Drawing.Size(1674, 911);
             this.Controls.Add(this.spContainer);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "[学员信息管理系统]--最适合初学者学习的实践项目";

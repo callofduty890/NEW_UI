@@ -21,11 +21,44 @@ namespace StudentManager
 
         #region 嵌入窗体显示
 
+        //关闭嵌入的窗口
+        private void ClosePreForm()
+        {
+            //遍历画布中的所有控件- [包括窗体]
+            foreach (Control item in this.spContainer.Panel2.Controls)
+            {
+                //判断是否是窗体对象
+                if (item is Form)
+                {
+                    //关闭窗体
+                    Form objControl = (Form)item;
+                    objControl.Close();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 嵌入窗体进入画布当中
+        /// </summary>
+        /// <param name="objForm">要嵌入的窗体</param>
+        public void OpenForm(Form objForm)
+        {
+            ClosePreForm(); //关闭清空之前的窗口
+            objForm.TopLevel = false;//将子窗体设置成非顶级窗体
+            objForm.FormBorderStyle = FormBorderStyle.None;//去掉窗体边框
+            objForm.Parent = this.spContainer.Panel2;//指定子窗体显示的容器
+            objForm.Dock = DockStyle.Fill;//随着容器大小自动调整
+            objForm.Show();
+        }
+
     
         //显示添加新学员窗体       
         private void tsmiAddStudent_Click(object sender, EventArgs e)
         {
-          
+            //实例化一个窗体显示
+            FrmAddStudent objForm = new FrmAddStudent();
+            //封装一个嵌入窗体功能函数
+            OpenForm(objForm);
         }
         private void btnAddStu_Click(object sender, EventArgs e)
         {
@@ -45,7 +78,7 @@ namespace StudentManager
         private void tsmi_Card_Click(object sender, EventArgs e)
         {
             FrmAttendance objForm = new FrmAttendance();
-          //  OpenForm(objForm);
+            OpenForm(objForm);
         }
         private void btnCard_Click(object sender, EventArgs e)
         {
@@ -55,7 +88,7 @@ namespace StudentManager
         private void tsmiQuery_Click(object sender, EventArgs e)
         {
             FrmScoreQuery objForm = new FrmScoreQuery();
-           // OpenForm(objForm);
+           OpenForm(objForm);
         }
         private void btnScoreQuery_Click(object sender, EventArgs e)
         {
@@ -65,7 +98,7 @@ namespace StudentManager
         private void tsmiManageStudent_Click(object sender, EventArgs e)
         {
             FrmStudentManage objForm = new FrmStudentManage();
-           // OpenForm(objForm);
+            OpenForm(objForm);
         }
         private void btnStuManage_Click(object sender, EventArgs e)
         {
@@ -75,7 +108,7 @@ namespace StudentManager
         private void tsmiQueryAndAnalysis_Click(object sender, EventArgs e)
         {
             FrmScoreManage objForm = new FrmScoreManage();
-          //  OpenForm(objForm);
+             OpenForm(objForm);
         }
         private void btnScoreAnalasys_Click(object sender, EventArgs e)
         {
@@ -85,7 +118,7 @@ namespace StudentManager
         private void tsmi_AQuery_Click(object sender, EventArgs e)
         {
             FrmAttendanceQuery objForm = new FrmAttendanceQuery();
-           // OpenForm(objForm);
+            OpenForm(objForm);
         }
         private void btnAttendanceQuery_Click(object sender, EventArgs e)
         {
