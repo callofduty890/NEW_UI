@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using DAL;
 using Common;
+using Models;
 
 namespace StudentManager
 {
@@ -96,6 +97,18 @@ namespace StudentManager
             #endregion
 
             #region 封装数据对象
+            Student objstudent = new Student();
+            objstudent.StudentName = this.txtStudentName.Text.Trim();
+            objstudent.Gender = this.rdoMale.Checked ? "男" : "女";
+            objstudent.Birthday = Convert.ToDateTime(this.dtpBirthday.Text);
+            objstudent.PhoneNumber = this.txtPhoneNumber.Text.Trim();
+            objstudent.ClassName = this.cboClassName.Text;
+            objstudent.StudentAddress = this.txtAddress.Text.Trim() == "" ? "地址不详" : this.txtAddress.Text.Trim();
+            objstudent.CardNo = this.txtCardNo.Text.Trim();
+            objstudent.ClassId = Convert.ToInt32(this.cboClassName.SelectedValue);
+            objstudent.Age= DateTime.Now.Year - Convert.ToDateTime(this.dtpBirthday.Text).Year;
+            objstudent.StuImage = this.pbStu.Image != null ? new SerializeObjectToString().SerializeObject(this.pbStu.Image) : "";
+
             #endregion
 
             #region 发起请求对应UI界面相应
