@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using DAL;
-
+using Common;
 
 namespace StudentManager
 {
@@ -14,6 +14,8 @@ namespace StudentManager
     {
         //创建班级操作对象
         private StudentClassService studentClassService = new StudentClassService();
+        //创建学生实例化操作对象
+        private StudentService objStudentService = new StudentService();
         //构造函数
         public FrmAddStudent()
         {
@@ -28,7 +30,69 @@ namespace StudentManager
         private void btnAdd_Click(object sender, EventArgs e)
         {
             #region 验证数据
-
+            //学生姓名不能空
+            if (this.txtStudentName.Text.Trim().Length==0)
+            {
+                MessageBox.Show("学生信息不能为空!", "提示信息");
+                return;
+            }
+            //考勤卡号
+            if (this.txtCardNo.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("考勤卡号不能为空！", "提示信息");
+                this.txtCardNo.Focus();
+                return;
+            }
+            //验证性别
+            if (!this.rdoFemale.Checked && !this.rdoMale.Checked)
+            {
+                MessageBox.Show("请选择学生性别！", "提示信息");
+                return;
+            }
+            //验证班级
+            if (this.cboClassName.SelectedIndex == -1)
+            {
+                MessageBox.Show("请选择班级！", "提示信息");
+                return;
+            }
+            //验证年龄
+            int age = DateTime.Now.Year - Convert.ToDateTime(this.dtpBirthday.Text).Year;
+            if (age > 35 && age < 18)
+            {
+                MessageBox.Show("年龄必须在18-35岁之间！", "提示信息");
+                return;
+            }
+            //身份证密码长度是否符合要求
+            if (!Common.DataValidate.IsIdentityCard(this.txtStudentIdNo.Text.Trim()))
+            {
+                MessageBox.Show("身份证信息不符合要求!", "验证提示信息");
+                this.txtStudentIdNo.Focus();
+                return;
+            }
+            //身份证出生日期与输入的日期是否匹配
+            if (!this.txtStudentIdNo.Text.Trim().Contains(this.dtpBirthday.Value.ToString("yyyyMMdd")))
+            {
+                MessageBox.Show("身份证号和出生日期不匹配！", "验证提示");
+                this.txtStudentIdNo.Focus();
+                this.txtStudentIdNo.SelectAll();
+                return;
+            }
+            //检查身份证号码是否已经在数据库当中出现
+            if (objStudentService.IsIdNoExisted(this.txtStudentIdNo.Text.Trim()))
+            {
+                MessageBox.Show("身份证号不能和现有学员身份证号重复！", "验证提示");
+                this.txtStudentIdNo.Focus();
+                this.txtStudentIdNo.SelectAll();
+                return;
+            }
+            //检查考勤卡号是否已经在数据库当中出现
+            if (objStudentService.IsCardNoExisted(this.txtCardNo.Text.Trim()))
+            {
+                MessageBox.Show("当前卡号已经存在！", "验证提示");
+                this.txtCardNo.Focus();
+                this.txtCardNo.SelectAll();
+                return;
+            }
             #endregion
 
             #region 封装数据对象
