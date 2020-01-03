@@ -126,5 +126,31 @@ namespace DAL
             objReader.Close();
             return objstudent;
         }
+        //修改学员信息
+        public int ModifyStudent(Student objStudent)
+        {
+            //【1】编写SQL语句
+            StringBuilder sqlBuilder = new StringBuilder();
+            sqlBuilder.Append("update Students set studentName='{0}',Gender='{1}',Birthday='{2}',");
+            sqlBuilder.Append("StudentIdNo={3},Age={4},PhoneNumber='{5}',StudentAddress='{6}',CardNo='{7}',ClassId={8},StuImage='{9}'");
+            sqlBuilder.Append(" where StudentId={10}");
+            //【2】解析对象
+            string sql = string.Format(sqlBuilder.ToString(), objStudent.StudentName,
+                     objStudent.Gender, objStudent.Birthday.ToString("yyyy-MM-dd"),
+                    objStudent.StudentIdNo, objStudent.Age,
+                    objStudent.PhoneNumber, objStudent.StudentAddress, objStudent.CardNo,
+                    objStudent.ClassId, objStudent.StuImage, objStudent.StudentId);
+            //【3】 传入执行
+            return SQLHelper.Upadte(sql);
+        }
+        //删除学员信息
+        public int DelectStudentById(string studentId)
+        {
+            //构建SQL语句
+            string sql = "delete from Students where StudentId = " + studentId;
+            //执行更新语句
+            return SQLHelper.Upadte(sql);
+        }
+
     }
 }

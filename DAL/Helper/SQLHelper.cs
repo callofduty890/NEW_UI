@@ -37,5 +37,17 @@ namespace DAL.Helper
             //查询
             return cmd.ExecuteScalar();
         }
+        //执行更新数据操作
+        public static int Upadte(string sql)
+        {
+            //连接数据库
+            SqlConnection conn = new SqlConnection(connString);
+            //创建数据库操作对象
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            //打开数据库
+            conn.Open();
+            //获取结果-返回内容
+            return cmd.ExecuteNonQuery();
+        }
     }
 }
